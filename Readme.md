@@ -32,6 +32,12 @@ batchTransferETH(address[])
 返回：无
 说明：无
 
+#### 批量获取余额与授权额度
+batchGetValue（address,address,address[]）
+入参：代币地址，路由地址，用户地址数组
+返回：uint[],uint[]
+说明：余额数组，授权额度数组[]
+
 Router合约接口：
 
 #### 交易代币

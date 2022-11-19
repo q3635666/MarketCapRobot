@@ -1,16 +1,36 @@
 [
 	{
-		"inputs": [],
-		"name": "batchCollectionERC20",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"inputs": [],
-		"name": "batchCollectionETH",
-		"outputs": [],
-		"stateMutability": "payable",
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_tokenAddress",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "_routerAddress",
+				"type": "address"
+			},
+			{
+				"internalType": "address[]",
+				"name": "_account",
+				"type": "address[]"
+			}
+		],
+		"name": "batchGetValue",
+		"outputs": [
+			{
+				"internalType": "uint256[]",
+				"name": "_value",
+				"type": "uint256[]"
+			},
+			{
+				"internalType": "uint256[]",
+				"name": "_approveValue",
+				"type": "uint256[]"
+			}
+		],
+		"stateMutability": "view",
 		"type": "function"
 	},
 	{
