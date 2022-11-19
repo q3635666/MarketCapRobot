@@ -39,7 +39,7 @@ batchGetValue（address,address,address[]）
 说明：余额数组，授权额度数组[]
 
 #### 批量获取ETH余额
-batchGetValue（address[]）
+batchGetETHValue（address[]）
 入参：用户地址数组
 返回：uint[]
 说明：余额数组
