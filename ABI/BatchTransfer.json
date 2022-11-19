@@ -2,6 +2,25 @@
 	{
 		"inputs": [
 			{
+				"internalType": "address[]",
+				"name": "_account",
+				"type": "address[]"
+			}
+		],
+		"name": "batchGetETHValue",
+		"outputs": [
+			{
+				"internalType": "uint256[]",
+				"name": "_ETHvalue",
+				"type": "uint256[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
 				"internalType": "address",
 				"name": "_tokenAddress",
 				"type": "address"

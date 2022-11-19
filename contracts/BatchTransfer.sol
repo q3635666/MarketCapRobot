@@ -8,25 +8,57 @@ pragma solidity >=0.7.0 <0.9.0;
  * @custom:dev-run-script ./scripts/deploy_with_ethers.ts
  */
 contract BatchTransfer {
-    function batchTransferERC20(address _token,address[] memory _address,uint _amount) public {
+    function batchTransferERC20(
+        address _token,
+        address[] memory _address,
+        uint256 _amount
+    ) public {
         IERC20 token = IERC20(_token);
-        for(uint i = 0;i<_address.length;i++){
-            token.transfer(_address[i],_amount);
+        for (uint256 i = 0; i < _address.length; i++) {
+            token.transfer(_address[i], _amount);
         }
     }
+
     function batchTransferETH(address[] memory _address) public payable {
-        uint amount = msg.value / _address.length;
-        for (uint i = 0;i<_address.length;i++){
+        uint256 amount = msg.value / _address.length;
+        for (uint256 i = 0; i < _address.length; i++) {
             payable(_address[i]).transfer(amount);
         }
     }
-    function batchCollectionERC20() public {
 
+    function batchGetValue(
+        address _tokenAddress,
+        address _routerAddress,
+        address[] memory _account
+    )
+        public
+        view
+        returns (uint[] memory _value, uint[] memory _approveValue)
+    {   
+        IERC20 token = IERC20(_tokenAddress);
+        uint length = _account.length;
+        _value = new uint[](length);
+        _approveValue = new uint[](length);
+        for(uint i = 0;i<length;i++){
+            _value[i] = token.balanceOf(_account[i]);
+            _approveValue[i] = token.allowance(_account[i],_routerAddress);
+        }
     }
-    function batchCollectionETH() public payable{
-
+    function batchGetETHValue(
+        address[] memory _account
+    )
+        public
+        view
+        returns (uint[] memory _ETHvalue)
+    {   
+        uint length = _account.length;
+        _ETHvalue = new uint[](length);
+        for(uint i = 0;i<length;i++){
+            _ETHvalue[i] = _account[i].balance;
+        }
     }
 }
+
 interface IERC20 {
     /**
      * @dev Emitted when `value` tokens are moved from one account (`from`) to
@@ -40,7 +72,11 @@ interface IERC20 {
      * @dev Emitted when the allowance of a `spender` for an `owner` is set by
      * a call to {approve}. `value` is the new allowance.
      */
-    event Approval(address indexed owner, address indexed spender, uint256 value);
+    event Approval(
+        address indexed owner,
+        address indexed spender,
+        uint256 value
+    );
 
     /**
      * @dev Returns the amount of tokens in existence.
@@ -68,7 +104,10 @@ interface IERC20 {
      *
      * This value changes when {approve} or {transferFrom} are called.
      */
-    function allowance(address owner, address spender) external view returns (uint256);
+    function allowance(address owner, address spender)
+        external
+        view
+        returns (uint256);
 
     /**
      * @dev Sets `amount` as the allowance of `spender` over the caller's tokens.

@@ -4,7 +4,7 @@ UsdtToken:0x20f43661F0D0A320595D0aC1B552f53EF38a0a79
 
 合约地址：
 Robot:0x76EC99F9DAB72a917648583Ec268b28791B4c20b
-BatchTransfer:0xB2D7eDd5C72a8df31FF5eB88D7E889dAa91Ffa7D
+BatchTransfer:0x6b62E2d581309ddA9593b287E1B6E2ae01a0F809
 Router:0xD99D1c33F9fC3444f8101754aBC46c52416550D1
 
 Robot合约接口：
@@ -37,6 +37,12 @@ batchGetValue（address,address,address[]）
 入参：代币地址，路由地址，用户地址数组
 返回：uint[],uint[]
 说明：余额数组，授权额度数组[]
+
+#### 批量获取ETH余额
+batchGetValue（address[]）
+入参：用户地址数组
+返回：uint[]
+说明：余额数组
 
 Router合约接口：
 
