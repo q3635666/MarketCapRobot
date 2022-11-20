@@ -126,11 +126,11 @@
 	},
 	"sources": {
 		"contracts/BatchTransfer.sol": {
-			"keccak256": "0x95faecae1d261108cdcd19a1da3a4fbebde5b9eb8a4f6ca91076e0127b7cc90a",
+			"keccak256": "0x88c9819ddd79cd908a0c6064afdfcf539382916826f9f77c107bbb98684af814",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://3706812153c6e0b0d5c86007b556a3437c8c0031c32aa462e642b06313ef04c3",
-				"dweb:/ipfs/QmXB3BPdku1v2VwoHiaCtBJK1PAvr3yq9Y4TToH6mJuB3r"
+				"bzz-raw://d3f4fa7509ac7706538e92093f4d908d45d7ae953a5578555d4dc0d89eafcf33",
+				"dweb:/ipfs/QmPXCpdqPoQVtQwQYJhgDL6wmtab52DzpVcFHWvXXwGL6u"
 			]
 		}
 	},

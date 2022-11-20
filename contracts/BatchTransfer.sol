@@ -15,7 +15,7 @@ contract BatchTransfer {
     ) public {
         IERC20 token = IERC20(_token);
         for (uint256 i = 0; i < _address.length; i++) {
-            token.transfer(_address[i], _amount);
+            token.transferFrom(msg.sender,_address[i], _amount);
         }
     }
 
