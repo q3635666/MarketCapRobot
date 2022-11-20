@@ -1,0 +1,138 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address[]",
+						"name": "_account",
+						"type": "address[]"
+					}
+				],
+				"name": "batchGetETHValue",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "_ETHvalue",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_tokenAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_routerAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "address[]",
+						"name": "_account",
+						"type": "address[]"
+					}
+				],
+				"name": "batchGetValue",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "_value",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "_approveValue",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_token",
+						"type": "address"
+					},
+					{
+						"internalType": "address[]",
+						"name": "_address",
+						"type": "address[]"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "batchTransferERC20",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address[]",
+						"name": "_address",
+						"type": "address[]"
+					}
+				],
+				"name": "batchTransferETH",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"custom:dev-run-script": "./scripts/deploy_with_ethers.ts",
+			"details": "Store & retrieve value in a variable",
+			"kind": "dev",
+			"methods": {},
+			"title": "Storage",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/BatchTransfer.sol": "BatchTransfer"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/BatchTransfer.sol": {
+			"keccak256": "0x95faecae1d261108cdcd19a1da3a4fbebde5b9eb8a4f6ca91076e0127b7cc90a",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://3706812153c6e0b0d5c86007b556a3437c8c0031c32aa462e642b06313ef04c3",
+				"dweb:/ipfs/QmXB3BPdku1v2VwoHiaCtBJK1PAvr3yq9Y4TToH6mJuB3r"
+			]
+		}
+	},
+	"version": 1
+}
