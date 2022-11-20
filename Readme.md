@@ -20,8 +20,8 @@ ValueSwapRobot(address,address,uint,uint,uint)
 BatchTransfer：合约接口
 
 #### 批量转移代币
-batchTransferERC20(address,address[])
-入参：代币地址，转移地址数组
+batchTransferERC20(address,address[],uint)
+入参：代币地址，转移地址数组，每个地址转账金额
 返回：无
 说明：无
 
