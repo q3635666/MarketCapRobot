@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getUserInfo",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "_userPermissions",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bool",
+						"name": "_userPermissions",
+						"type": "bool"
+					}
+				],
+				"name": "setUserInfo",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/ValueRobot.sol": "ValueRobot"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/ValueRobot.sol": {
+			"keccak256": "0xd1590e811838c6afe92aee44e3b63b0ea91ee62d09d6ce2b11ac0693417bb64e",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://b12eb700d25eda8d81e6074f3ec70705f46dc39ad392dd9578c4e6594542c45b",
+				"dweb:/ipfs/QmWXpPY9iPcZ5HhHsY3V1B7SxCPpuKvETDyRGwYPsFYTwR"
+			]
+		}
+	},
+	"version": 1
+}

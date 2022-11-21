@@ -4,7 +4,7 @@ RobotToken:0xf7C8fF1d4cde823710cbCacD5F9a411e14709982
 UsdtToken:0x20f43661F0D0A320595D0aC1B552f53EF38a0a79
 
 合约地址：
-Robot:0x76EC99F9DAB72a917648583Ec268b28791B4c20b
+Robot:0x59c4bbe3B2a41E888d95CbF64c698056d579B5fF
 BatchTransfer:0x357Bc70d51745cd299f4d3ED85b3ff8432457362
 Router:0xD99D1c33F9fC3444f8101754aBC46c52416550D1
 
@@ -13,13 +13,16 @@ Router:0xD99D1c33F9fC3444f8101754aBC46c52416550D1
 BatchTransfer：0x759B2bf1bE4dEc5cDf4031511Ca42A1569c12c4E
 Robot合约接口：
 
-#### 返回机器人操作
-ValueSwapRobot(address,address,uint,uint,uint)
-入参：代币地址，usdt地址，最小价格汇率，最大价格汇率，买单占比率
+#### 获取用户信息
+getUserInfo()
+入参：无
 返回：bool
-说明：返回true购买代币，返回false卖出代币
-
-
+说明：用户权限
+#### 设置用户信息
+setUserInfo(bool)
+入参：用户权限
+返回：无
+说明：
 
 BatchTransfer：合约接口
 

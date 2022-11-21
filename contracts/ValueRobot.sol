@@ -3,62 +3,17 @@
 pragma solidity >=0.7.0 <0.9.0;
 
 contract ValueRobot {
-    IUniswapV2Router02 uniswapRouter =
-        IUniswapV2Router02(0xD99D1c33F9fC3444f8101754aBC46c52416550D1);
-    IUniswapV2Factory factory = IUniswapV2Factory(uniswapRouter.factory());
-
-    function ValueSwapRobot(
-        address _baseToken,
-        address _usdtToken,
-        uint256 _minExchangeRate,
-        uint256 _maxExchangeRate,
-        uint256 _buyTransferRate
-    ) public view returns (bool){
-        IUniswapV2Pair uniswapPair = IUniswapV2Pair(
-            factory.getPair(_baseToken, _usdtToken)
-        );
-        uint256 exchangeRate = GetUsdtValueFrom(uniswapPair, _usdtToken, 1e18);
-        if (
-            exchangeRate >= _minExchangeRate && exchangeRate <= _maxExchangeRate
-        ) {
-            bool buyOrSell = BuyOrSell(_buyTransferRate);
-            if (buyOrSell) {
-                return true;
-            } else {
-                return false;
-            }
-        } else if (exchangeRate > _maxExchangeRate) {
-            return true;
-        } else{
-            return false; 
-        }
+    struct UserInfo{
+        bool userPermissions;
     }
-
-    function BuyOrSell(uint256 _buyTransferRate) public view returns (bool) {
-        uint256 random = uint256(
-            keccak256(
-                abi.encodePacked(block.timestamp, block.difficulty, msg.sender)
-            )
-        ) % 100;
-        if (random < _buyTransferRate) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-
-    function GetUsdtValueFrom(
-        IUniswapV2Pair _uniswapPair,
-        address _usdtToken,
-        uint256 amount
-    ) public view returns (uint256) {
-        (uint256 reserve0, uint256 reserve1, ) = _uniswapPair.getReserves();
-        if (_uniswapPair.token0() == _usdtToken) {
-            return uniswapRouter.quote(amount, reserve1, reserve0);
-        } else {
-            return uniswapRouter.quote(amount, reserve0, reserve1);
-        }
-    }
+    mapping (address => UserInfo) userInfo;
+    function getUserInfo() public view returns(bool _userPermissions){
+        _userPermissions = userInfo[msg.sender].userPermissions;
+    } 
+    function setUserInfo(bool _userPermissions) public {
+        UserInfo storage _userInfo = userInfo[msg.sender];
+         _userInfo.userPermissions = _userPermissions;
+    } 
 }
 
 interface IUniswapV2Factory {
