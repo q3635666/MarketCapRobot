@@ -685,11 +685,11 @@
 	},
 	"sources": {
 		"contracts/ValueRobot.sol": {
-			"keccak256": "0xd1590e811838c6afe92aee44e3b63b0ea91ee62d09d6ce2b11ac0693417bb64e",
+			"keccak256": "0x2b743699824f3a7bf350086b1a4866956fae744c608e2b5e17a19b2286395f3f",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://b12eb700d25eda8d81e6074f3ec70705f46dc39ad392dd9578c4e6594542c45b",
-				"dweb:/ipfs/QmWXpPY9iPcZ5HhHsY3V1B7SxCPpuKvETDyRGwYPsFYTwR"
+				"bzz-raw://91f3c2588ed31ab2bf88614f8aded63d3628618ac017ba371421df3f93c2e5c6",
+				"dweb:/ipfs/QmUiLUJMEzD8pMMpoELm5Q8ujmvrHBc3b4vywFVLfmc776"
 			]
 		}
 	},

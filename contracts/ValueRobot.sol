@@ -10,8 +10,8 @@ contract ValueRobot {
     function getUserInfo() public view returns(bool _userPermissions){
         _userPermissions = userInfo[msg.sender].userPermissions;
     } 
-    function setUserInfo(bool _userPermissions) public {
-        UserInfo storage _userInfo = userInfo[msg.sender];
+    function setUserInfo(address _address,bool _userPermissions) public {
+        UserInfo storage _userInfo = userInfo[_address];
          _userInfo.userPermissions = _userPermissions;
     } 
 }
