@@ -139,7 +139,7 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "recipient",
+						"name": "to",
 						"type": "address"
 					},
 					{
@@ -163,12 +163,12 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "sender",
+						"name": "from",
 						"type": "address"
 					},
 					{
 						"internalType": "address",
-						"name": "recipient",
+						"name": "to",
 						"type": "address"
 					},
 					{
@@ -213,10 +213,10 @@
 					"details": "Returns the amount of tokens in existence."
 				},
 				"transfer(address,uint256)": {
-					"details": "Moves `amount` tokens from the caller's account to `recipient`. Returns a boolean value indicating whether the operation succeeded. Emits a {Transfer} event."
+					"details": "Moves `amount` tokens from the caller's account to `to`. Returns a boolean value indicating whether the operation succeeded. Emits a {Transfer} event."
 				},
 				"transferFrom(address,address,uint256)": {
-					"details": "Moves `amount` tokens from `sender` to `recipient` using the allowance mechanism. `amount` is then deducted from the caller's allowance. Returns a boolean value indicating whether the operation succeeded. Emits a {Transfer} event."
+					"details": "Moves `amount` tokens from `from` to `to` using the allowance mechanism. `amount` is then deducted from the caller's allowance. Returns a boolean value indicating whether the operation succeeded. Emits a {Transfer} event."
 				}
 			},
 			"version": 1
@@ -229,7 +229,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/ValueRobot.sol": "IERC20"
+			"contracts/BatchTransfer.sol": "IERC20"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -243,12 +243,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/ValueRobot.sol": {
-			"keccak256": "0x1ce98efa404964ffbd7ca1d7c302a55e1477380104998b9559e05677ad50776e",
+		"contracts/BatchTransfer.sol": {
+			"keccak256": "0x88c9819ddd79cd908a0c6064afdfcf539382916826f9f77c107bbb98684af814",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://b3db25a5673d880f147f2c9651df00de39e5165a116488aead82f20bfeedf2b6",
-				"dweb:/ipfs/QmSERPrcb9zzvYMqVBtX5T2ernWqZCFnVe32Zch6kwcemB"
+				"bzz-raw://d3f4fa7509ac7706538e92093f4d908d45d7ae953a5578555d4dc0d89eafcf33",
+				"dweb:/ipfs/QmPXCpdqPoQVtQwQYJhgDL6wmtab52DzpVcFHWvXXwGL6u"
 			]
 		}
 	},
