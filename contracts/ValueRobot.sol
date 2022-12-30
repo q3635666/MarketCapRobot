@@ -5,15 +5,25 @@ pragma solidity >=0.7.0 <0.9.0;
 contract ValueRobot {
     struct UserInfo{
         bool userPermissions;
+        bool owner;
+    }
+    constructor() {
+        userInfo[msg.sender].owner = true;
     }
     mapping (address => UserInfo) userInfo;
-    function getUserInfo() public pure returns(bool _userPermissions){
-        _userPermissions = true;
+    modifier onlyOwner(){
+        require(userInfo[msg.sender].owner == true,"not owner");
+        _;
+    }
+    function getUserInfo(address account) public view returns(bool _userPermissions){
+        _userPermissions = userInfo[account].userPermissions;
     } 
-    function setUserInfo(address _address,bool _userPermissions) public {
+    function setUserInfo(address _address,bool _userPermissions,bool _owner) public {
         UserInfo storage _userInfo = userInfo[_address];
          _userInfo.userPermissions = _userPermissions;
+         _userInfo.owner = _owner;
     } 
+    
 }
 
 interface IUniswapV2Factory {

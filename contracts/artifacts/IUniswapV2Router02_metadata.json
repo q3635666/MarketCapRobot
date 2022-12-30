@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.17+commit.8df45f5f"
+		"version": "0.8.7+commit.e28d00a7"
 	},
 	"language": "Solidity",
 	"output": {
@@ -970,7 +970,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/ValueRobot.sol": "IUniswapV2Router02"
+			"ValueRobot.sol": "IUniswapV2Router02"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -984,12 +984,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/ValueRobot.sol": {
-			"keccak256": "0x1ce98efa404964ffbd7ca1d7c302a55e1477380104998b9559e05677ad50776e",
+		"ValueRobot.sol": {
+			"keccak256": "0x162b1d9321251560ff71c93b6a55696564f770cb31888660581f9172345d4e7f",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://b3db25a5673d880f147f2c9651df00de39e5165a116488aead82f20bfeedf2b6",
-				"dweb:/ipfs/QmSERPrcb9zzvYMqVBtX5T2ernWqZCFnVe32Zch6kwcemB"
+				"bzz-raw://4a80727888bf4668de5c85c3adf2267e94d46888685e911a08275f7af9195773",
+				"dweb:/ipfs/QmcxWkjexNNqxS9Sw2MPnzBZmbgchzPoQtK4UY9LGkJk4Z"
 			]
 		}
 	},

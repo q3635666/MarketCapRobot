@@ -96,11 +96,8 @@
 			}
 		],
 		"devdoc": {
-			"custom:dev-run-script": "./scripts/deploy_with_ethers.ts",
-			"details": "Store & retrieve value in a variable",
 			"kind": "dev",
 			"methods": {},
-			"title": "Storage",
 			"version": 1
 		},
 		"userdoc": {
@@ -111,7 +108,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"BatchTransfer.sol": "BatchTransfer"
+			"WhiteList.sol": "White"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -125,12 +122,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"BatchTransfer.sol": {
-			"keccak256": "0x88c9819ddd79cd908a0c6064afdfcf539382916826f9f77c107bbb98684af814",
+		"WhiteList.sol": {
+			"keccak256": "0x1fa5a6be89fcec30c08354e0b44b06ec9578c740a262ff1f991c253d870f3129",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://d3f4fa7509ac7706538e92093f4d908d45d7ae953a5578555d4dc0d89eafcf33",
-				"dweb:/ipfs/QmPXCpdqPoQVtQwQYJhgDL6wmtab52DzpVcFHWvXXwGL6u"
+				"bzz-raw://467a0aa2eb7c9da4cf7501ae6023dc4031afe34231d16f5f047a48e2ccaa35f0",
+				"dweb:/ipfs/QmbLvnihWEnwVoGW3ALfoBeFGG79q1dvFJZuY9Cu7yyKcB"
 			]
 		}
 	},

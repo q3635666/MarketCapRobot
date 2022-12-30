@@ -6,11 +6,6 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -18,11 +13,11 @@
 						"type": "address"
 					}
 				],
-				"name": "getUserInfo",
+				"name": "getWhitelist",
 				"outputs": [
 					{
 						"internalType": "bool",
-						"name": "_userPermissions",
+						"name": "",
 						"type": "bool"
 					}
 				],
@@ -33,21 +28,34 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "_address",
+						"name": "account",
 						"type": "address"
 					},
 					{
 						"internalType": "bool",
-						"name": "_userPermissions",
-						"type": "bool"
-					},
-					{
-						"internalType": "bool",
-						"name": "_owner",
+						"name": "isOwner",
 						"type": "bool"
 					}
 				],
-				"name": "setUserInfo",
+				"name": "setOwner",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "isWhitelist",
+						"type": "bool"
+					}
+				],
+				"name": "setWhitelist",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -66,7 +74,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"ValueRobot.sol": "ValueRobot"
+			"WhiteList.sol": "WhiteList"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -80,12 +88,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"ValueRobot.sol": {
-			"keccak256": "0x162b1d9321251560ff71c93b6a55696564f770cb31888660581f9172345d4e7f",
+		"WhiteList.sol": {
+			"keccak256": "0xd6eec849d358071b4fc5e73b7b73d33a1c34a714fed33deedf4e7f02628e9d0c",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://4a80727888bf4668de5c85c3adf2267e94d46888685e911a08275f7af9195773",
-				"dweb:/ipfs/QmcxWkjexNNqxS9Sw2MPnzBZmbgchzPoQtK4UY9LGkJk4Z"
+				"bzz-raw://fb5b71f5d83060bddf4cdb54643d8df8e06b24191472c3f78f7447a33695663f",
+				"dweb:/ipfs/QmfMASFhT2Wr4uVhyhNVzCj9CSay3NQaHczPnvvUaHMrsk"
 			]
 		}
 	},
