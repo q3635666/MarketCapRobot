@@ -1,30 +1,31 @@
-测试：
-测试代币：
+BSC测试：
 RobotToken:0xf7C8fF1d4cde823710cbCacD5F9a411e14709982
-
 UsdtToken:0x20f43661F0D0A320595D0aC1B552f53EF38a0a79
-
-测试合约地址：
-Robot:0xA59792F0bb4c61153125565cc21C89E5C0CB1dBf
-
+Robot:0xbA627948dCA2Bfa8E140718aaFb60Fc9aEAdb0bb
 BatchTransfer:0x357Bc70d51745cd299f4d3ED85b3ff8432457362
 
+ETH测试：
+RobotToken:0xc206f6632e7FfC5ad6bE366Cb77ADdBafB88F715
+UsdtToken:0xFdC0d381108F0edE0720b0ece286a9ff8a8F5f5C
+Robot:0x7fA258E87eCea5223639f8B56c0c13949EBf4d17
+BatchTransfer:0xD596c498De87E6B459DCD9F06861b60FB74e9a21
+UniswapV3Factory:0x1F98431c8aD98523631AE4a59f267346ea31F984
+SwapRouter:0xE592427A0AEce92De3Edee1F18E0157C05861564
 
-正式合约地址：
-Robot： 0x0f2B699827199ABB1CBcAa0F86C527D39bc651f4
-
+BSC正式合约地址：
+Robot： 0xdD652f7cD68A2D908C223F25Fb0793e1cB202c5a
 BatchTransfer：0x51a5Ee936aCC73eAD4091b6af9447677E63b43BB
 
 Robot合约接口：
 
 #### 获取用户信息
-getUserInfo()
-入参：无
+getUserInfo(address)
+入参：用户地址
 返回：bool
 说明：用户权限
 #### 设置用户信息
-setUserInfo(address,bool)
-入参：用户地址,用户权限
+setUserInfo(address,bool,bool)
+入参：用户地址,用户权限,管理权限
 返回：无
 说明：
 
