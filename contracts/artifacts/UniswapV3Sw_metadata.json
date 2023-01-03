@@ -18,7 +18,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"WhiteList.sol": "Context"
+			"UniswapV3.sol": "UniswapV3Sw"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -32,12 +32,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"WhiteList.sol": {
-			"keccak256": "0x32fc29d11261a1c48b2f9edbdd7a01eb5102ce15fc00ce3264d8fa0ea0783539",
+		"UniswapV3.sol": {
+			"keccak256": "0xe4c04fcaaa3200fcca5fd4a6d4798fddd7b3129e7fa9e0b78da93cf32524dca6",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://2945d354f9884025c8945a361780059be9203089913966e22cb69da9e93e906e",
-				"dweb:/ipfs/QmQmZRR8VEtAfLHShZH5bA4V2gVYXhzkPqNUNaguADyF7U"
+				"bzz-raw://ae6ca173026737f0b68372edd38cd0f91938e6eb7ad18ce5d6cae246e5e7a2c4",
+				"dweb:/ipfs/QmREAzpY6QcPHAJFoL5gsaS4V3c4GD3kNySJmFPQsKZedh"
 			]
 		}
 	},

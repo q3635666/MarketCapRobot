@@ -1,0 +1,75 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "tokenA",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "tokenB",
+						"type": "address"
+					},
+					{
+						"internalType": "uint24",
+						"name": "fee",
+						"type": "uint24"
+					}
+				],
+				"name": "getPool",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "pool",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"UniswapV3.sol": "UniswapV3Factory"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"UniswapV3.sol": {
+			"keccak256": "0x0b258ba7a0d15a4b1d391349b5fa71c0b3ca260849b5535b7d1bb234821293ab",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://fcac92549c445615b92850231bb2d9ffc8321d84a7b2e149ed106c10ae7d6485",
+				"dweb:/ipfs/QmdZW4XegKgzrEQRXJ4BpsgCxGoyfpw5Sd865qy6trgMTh"
+			]
+		}
+	},
+	"version": 1
+}

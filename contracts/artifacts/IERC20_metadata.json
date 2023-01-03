@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.7+commit.e28d00a7"
+		"version": "0.8.17+commit.8df45f5f"
 	},
 	"language": "Solidity",
 	"output": {
@@ -190,6 +190,7 @@
 			}
 		],
 		"devdoc": {
+			"details": "Interface of the ERC20 standard as defined in the EIP.",
 			"events": {
 				"Approval(address,address,uint256)": {
 					"details": "Emitted when the allowance of a `spender` for an `owner` is set by a call to {approve}. `value` is the new allowance."
@@ -229,7 +230,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"ValueRobot.sol": "IERC20"
+			"WhiteList.sol": "IERC20"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -243,12 +244,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"ValueRobot.sol": {
-			"keccak256": "0x162b1d9321251560ff71c93b6a55696564f770cb31888660581f9172345d4e7f",
-			"license": "GPL-3.0",
+		"WhiteList.sol": {
+			"keccak256": "0x32fc29d11261a1c48b2f9edbdd7a01eb5102ce15fc00ce3264d8fa0ea0783539",
+			"license": "MIT",
 			"urls": [
-				"bzz-raw://4a80727888bf4668de5c85c3adf2267e94d46888685e911a08275f7af9195773",
-				"dweb:/ipfs/QmcxWkjexNNqxS9Sw2MPnzBZmbgchzPoQtK4UY9LGkJk4Z"
+				"bzz-raw://2945d354f9884025c8945a361780059be9203089913966e22cb69da9e93e906e",
+				"dweb:/ipfs/QmQmZRR8VEtAfLHShZH5bA4V2gVYXhzkPqNUNaguADyF7U"
 			]
 		}
 	},

@@ -1,0 +1,107 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "tokenIn",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "tokenOut",
+								"type": "address"
+							},
+							{
+								"internalType": "uint24",
+								"name": "fee",
+								"type": "uint24"
+							},
+							{
+								"internalType": "address",
+								"name": "recipient",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "deadline",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "amountIn",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "amountOutMinimum",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint160",
+								"name": "sqrtPriceLimitX96",
+								"type": "uint160"
+							}
+						],
+						"internalType": "struct UniswapV3SwapRouter.ExactInputSingleParams",
+						"name": "params",
+						"type": "tuple"
+					}
+				],
+				"name": "exactInputSingle",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "amountOut",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"UniswapV3.sol": "UniswapV3SwapRouter"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"UniswapV3.sol": {
+			"keccak256": "0x8ce55f83be79457662fccb76162980b33c023191b4469f0bcb3b4b3bb71fce6f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://e2b79f121fde2b8a1ea57509f6b99187bba8c08b099344ec4cc4cd13cb18607d",
+				"dweb:/ipfs/QmP5yhHQiVkrbhCrkULJ1JtJyhs25x57tqNeRkFRa4kwRq"
+			]
+		}
+	},
+	"version": 1
+}
