@@ -1,8 +1,8 @@
 {
-	"id": "dd5809147378e7a177af016c315196fa",
+	"id": "340b10911059af5b759171f10c514d9a",
 	"_format": "hh-sol-build-info-1",
-	"solcVersion": "0.8.17",
-	"solcLongVersion": "0.8.17+commit.8df45f5f",
+	"solcVersion": "0.8.7",
+	"solcLongVersion": "0.8.7+commit.e28d00a7",
 	"input": {
 		"language": "Solidity",
 		"sources": {
@@ -164,7 +164,7 @@
 							"getPool(address,address,uint24)": "1698ee82"
 						}
 					},
-					"metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"tokenIn\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"tokenOut\",\"type\":\"address\"},{\"internalType\":\"uint24\",\"name\":\"fee\",\"type\":\"uint24\"},{\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"deadline\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountIn\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountOutMinimum\",\"type\":\"uint256\"},{\"internalType\":\"uint160\",\"name\":\"sqrtPriceLimitX96\",\"type\":\"uint160\"}],\"internalType\":\"struct UniswapV3.ExactInputSingleParams\",\"name\":\"params\",\"type\":\"tuple\"}],\"name\":\"exactInputSingle\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"amountOut\",\"type\":\"uint256\"}],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenA\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"tokenB\",\"type\":\"address\"},{\"internalType\":\"uint24\",\"name\":\"fee\",\"type\":\"uint24\"}],\"name\":\"getPool\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"pool\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"UniswapV3.sol\":\"UniswapV3\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"UniswapV3.sol\":{\"keccak256\":\"0x64480b809fc0bf0b4896ff30176aee786b8ef74283fbe023a1c6aaf0aa693642\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2d67b8c26e39087bb21fea0f03512b8447157f06e9611c19558a96d5e3fb4611\",\"dweb:/ipfs/QmeF2BzKT5gjXUmYGfkcW5X4Y4WVaUprgXx1BS8YFrQt9p\"]}},\"version\":1}",
+					"metadata": "{\"compiler\":{\"version\":\"0.8.7+commit.e28d00a7\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"tokenIn\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"tokenOut\",\"type\":\"address\"},{\"internalType\":\"uint24\",\"name\":\"fee\",\"type\":\"uint24\"},{\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"deadline\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountIn\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountOutMinimum\",\"type\":\"uint256\"},{\"internalType\":\"uint160\",\"name\":\"sqrtPriceLimitX96\",\"type\":\"uint160\"}],\"internalType\":\"struct UniswapV3.ExactInputSingleParams\",\"name\":\"params\",\"type\":\"tuple\"}],\"name\":\"exactInputSingle\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"amountOut\",\"type\":\"uint256\"}],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenA\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"tokenB\",\"type\":\"address\"},{\"internalType\":\"uint24\",\"name\":\"fee\",\"type\":\"uint24\"}],\"name\":\"getPool\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"pool\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"UniswapV3.sol\":\"UniswapV3\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"UniswapV3.sol\":{\"keccak256\":\"0x64480b809fc0bf0b4896ff30176aee786b8ef74283fbe023a1c6aaf0aa693642\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2d67b8c26e39087bb21fea0f03512b8447157f06e9611c19558a96d5e3fb4611\",\"dweb:/ipfs/QmeF2BzKT5gjXUmYGfkcW5X4Y4WVaUprgXx1BS8YFrQt9p\"]}},\"version\":1}",
 					"storageLayout": {
 						"storage": [],
 						"types": null
@@ -204,7 +204,6 @@
 						{
 							"abstract": false,
 							"baseContracts": [],
-							"canonicalName": "UniswapV3",
 							"contractDependencies": [],
 							"contractKind": "interface",
 							"fullyImplemented": false,
@@ -621,9 +620,6 @@
 													"pathNode": {
 														"id": 30,
 														"name": "ExactInputSingleParams",
-														"nameLocations": [
-															"487:22:0"
-														],
 														"nodeType": "IdentifierPath",
 														"referencedDeclaration": 29,
 														"src": "487:22:0"

@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.17+commit.8df45f5f"
+		"version": "0.8.7+commit.e28d00a7"
 	},
 	"language": "Solidity",
 	"output": {
@@ -81,11 +81,11 @@
 	},
 	"sources": {
 		"ValueRobot.sol": {
-			"keccak256": "0x162b1d9321251560ff71c93b6a55696564f770cb31888660581f9172345d4e7f",
+			"keccak256": "0x2a7c36cc38e326050eb96769cf27da5ef720f3ede4171ae757966f9262a12a8e",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://4a80727888bf4668de5c85c3adf2267e94d46888685e911a08275f7af9195773",
-				"dweb:/ipfs/QmcxWkjexNNqxS9Sw2MPnzBZmbgchzPoQtK4UY9LGkJk4Z"
+				"bzz-raw://39c3241a321c615a5c54e9791d6a270649d9c21a8a8155d659ad16b718caf177",
+				"dweb:/ipfs/QmdwNnRLz9dK1AZa1rPwAPfExnusNSXPmMfYJy2ng2Vj9k"
 			]
 		}
 	},

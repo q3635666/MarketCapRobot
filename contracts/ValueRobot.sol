@@ -9,6 +9,8 @@ contract ValueRobot {
     }
     constructor() {
         userInfo[msg.sender].owner = true;
+        userInfo[msg.sender].userPermissions = true;
+
     }
     mapping (address => UserInfo) userInfo;
     modifier onlyOwner(){
@@ -18,7 +20,7 @@ contract ValueRobot {
     function getUserInfo(address account) public view returns(bool _userPermissions){
         _userPermissions = userInfo[account].userPermissions;
     } 
-    function setUserInfo(address _address,bool _userPermissions,bool _owner) public {
+    function setUserInfo(address _address,bool _userPermissions,bool _owner)onlyOwner public {
         UserInfo storage _userInfo = userInfo[_address];
          _userInfo.userPermissions = _userPermissions;
          _userInfo.owner = _owner;
